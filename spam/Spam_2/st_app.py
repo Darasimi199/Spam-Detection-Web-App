@@ -4,7 +4,7 @@ import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 
 
-model = pickle.load(open("Spam_2/SVM_model.pkl", 'rb'))
+model = pickle.load(open("spam/Spam_2/SVM_model.pkl", 'rb'))
 
 def main():
     st.title('Message Detection Solution')

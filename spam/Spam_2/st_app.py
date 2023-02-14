@@ -4,13 +4,13 @@ import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 
 
-model = pickle.load(open("https://github.com/Darasimi199/Spam-Detection-Web-App/blob/main/spam/Spam_2/SVM_model.pkl", 'rb'))
+model = pickle.load(open(r"https://github.com/Darasimi199/Spam-Detection-Web-App/blob/main/spam/Spam_2/SVM_model.pkl", 'rb'))
 
 def main():
     st.title('Message Detection Solution')
 
     #load in the dataset
-    df = pd.read_csv('https://raw.githubusercontent.com/Darasimi199/Spam-Detection-Web-App/main/spam/Spam_2/clean_df.csv')
+    df = pd.read_csv(r'https://raw.githubusercontent.com/Darasimi199/Spam-Detection-Web-App/main/spam/Spam_2/clean_df.csv')
 
     # Input variable 'message'
     message = st.text_input('Message')
